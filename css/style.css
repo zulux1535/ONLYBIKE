@@ -1,0 +1,369 @@
+/* =====================================================
+   🎨 BODY
+   -----------------------------------------------------
+   ▒▒ Aquí controlas estilos globales
+   ▒▒ Fuentes, fondo y colores base
+   ▒▒ Todo lo demás hereda desde aquí
+   ===================================================== */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(../img/undefined_genera_un_clasificat.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+/* 
+╔══════════════════════════════════════╗
+║   ⬇️ SOY EL BOTÓN SCROLL              ║
+║--------------------------------------║
+║ ▸ Vivo flotando en la esquina        ║
+║ ▸ Cuando me tocas, te llevo abajo    ║
+║ ▸ Soy como un ascensor, pero sexy 🚀 ║
+║ ▸ No me ignores, estoy aquí pa’ guiar║
+╚══════════════════════════════════════╝
+*/
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px; /* ajusta la distancia del borde inferior */
+  right: 20px;  /* ajusta la distancia del borde derecho */
+  z-index: 9999; /* esto lo pone por encima de casi todo */
+  background: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+
+.scroll-up {
+  bottom: 70px;
+}
+
+
+.scroll-btn:hover {
+  background: red;
+}
+
+
+/* =====================================================
+   🔤 FUENTES DE TEXTO
+   -----------------------------------------------------
+   ▒▒ Aquí defines las tipografías que usará la web
+   ▒▒ Se aplican desde @font-face o Google Fonts
+   ▒▒ Normalmente se heredan en todo el sitio
+   ▒▒ Elige bien: la letra también comunica estilo
+   ===================================================== */
+@font-face{
+    font-family: "geostarfill";
+    src: url(../fonts/GeostarFill-Regular.ttf);
+    font-weight: bold;
+   
+}
+
+@font-face {
+    font-family: "Rocksalt";
+    src: url(../fonts/RockSalt-Regular.ttf);
+    font-weight: bold;
+  
+}
+
+/* =====================================================
+   📌 NAVBAR
+   -----------------------------------------------------
+   ▒▒ Barra de navegación principal
+   ▒▒ Normalmente arriba de la página
+   ▒▒ Contiene enlaces a las secciones
+   ▒▒ Puede ser fija o desplazarse con el scroll
+   ===================================================== */
+
+  
+ul, li, a{
+    color: black;  
+    text-decoration: none;
+    display: flex;
+    margin: 11px;
+    padding-right: 30%;
+    font-family: "geostarfill";
+    font-weight: bold;
+    transition: 1s all;
+    font-size: 20px;
+  
+}
+ul#list a:hover{
+    background-color: red;
+    height: 140px;
+    width: 140px;
+    color: white;
+}
+
+ul#list .inicio{
+    
+    color: white;
+}
+#themeToggle {
+  width: 42px; height: 42px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 9999px;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  color: var(--bs-emphasis-color);
+}
+#themeToggle:hover { background: var(--bs-tertiary-bg); }
+#themeToggle i { font-size: 1.1rem; line-height: 1; }
+
+h1{
+    color: white;
+    font-family: "geostarfill";
+    font-weight: bold;
+    font-size: 50px;
+    word-spacing: 25px;
+    text-align: center;
+    text-shadow: 3px 3px 0px blue, 5px 5px 0px black;
+    position: relative; bottom: 150px;
+   
+}
+h2{
+  font-size: 3rem;           
+  color: black;               
+  -webkit-text-stroke: 2px white; 
+  font-weight: bold;          
+}
+/* Ejemplo: burbuja cómic adaptativa */
+.comic-bubble {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  border: 2px solid var(--bs-border-color);
+  border-radius: 12px;
+}
+
+
+
+
+/* Títulos claros en oscuro sin romper el tema */
+h1, h2, h3, .card-title {
+  color: var(--bs-emphasis-color);
+}
+
+/* Tarjetas pilotos adaptadas */
+.piloto-card {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-border-color);
+}
+
+/* =====================================================
+   📑 SECTION
+   -----------------------------------------------------
+   ▒▒ Bloque de contenido semántico
+   ▒▒ Sirve para dividir la página en partes lógicas
+   ▒▒ Se usa para agrupar contenido relacionado
+   ▒▒ Ayuda a la estructura y accesibilidad del sitio
+   ===================================================== */
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA la burbuja_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+.comic-bubble{
+    font-family: "geostarfill";
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    padding: clamp(10px, 4vw, 20px) clamp(20px, 8vw, 40px);
+    background: blue; /* Azul de tu paleta */
+    color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.comic-bubble .comic-tail {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #1e3a8a transparent transparent transparent;
+}
+.tamanioimg {
+    height: 430px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+ /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA las burbujas de bienvenida y pilotos_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+.motero-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bubble-thought {
+  position: absolute;
+  top: 5%;       
+  left: 5%;      
+  max-width: 30%;   /* siempre se ajusta al ancho de pantalla */
+  background: #fff;
+  color: #111;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  font-size: clamp(14px, 2vw, 18px); /* escala según pantalla */
+  line-height: 1.4;
+  font-family: Impact, Arial Black, sans-serif; /* estilo deportivo sin externos */
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* burbujas de pensamiento */
+.bubble-thought::after,
+.bubble-thought::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.bubble-thought::after {
+  width: 20px;
+  height: 20px;
+  top: 60%;
+  right: -30px;
+}
+
+.bubble-thought::before {
+  width: 12px;
+  height: 12px;
+  top: 75%;
+  right: -50px;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*cartas al darle click a los usuarios_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+
+.piloto-card{
+  cursor:pointer;transition:transform .15s ease;
+
+}
+.piloto-card:hover{
+   transform:scale(1.05);
+   background-color: red;
+}
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA el segundo carrusel_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA EL FOOTER_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+:root{
+  --gp-negro:#0a0a0a;
+  --gp-blanco:#ffffff;
+  --gp-rojo:#e10600;
+}
+
+.gp-footer{
+  background: var(--gp-negro);
+  border-top: 4px solid var(--gp-rojo);
+  padding: 20px 16px;
+  text-align: center;
+  color: var(--gp-blanco);
+  font-family: Impact, "Arial Black", Arial, sans-serif;
+}
+
+.gp-footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Enlace principal */
+.gp-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--gp-blanco);
+  border: 2px solid var(--gp-blanco);
+  border-radius: 999px;
+  transition: all .2s ease;
+}
+
+.gp-cta:hover{
+  border-color: var(--gp-rojo);
+  color: var(--gp-rojo);
+}
+
+/* Imagen o logo de TikTok */
+.gp-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+/* Texto de derechos */
+.gp-copy{
+  margin: 0;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_aqui estaran las media query*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+/_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
+/* Responsive */
+@media (max-width: 768px) {
+  .final .pie-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .bubble-thought {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 0;
+  }
+
+  .bubble-thought::before {
+    width: 22px;
+    height: 22px;
+    left: 95%;
+    top: 40%;
+  }
+  
+  .bubble-thought::after {
+    width: 12px;
+    height: 12px;
+    left: 108%;
+    top: 50%;
+  }
+}
+
+
