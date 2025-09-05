@@ -86,13 +86,19 @@ ul, li, a{
     color: black;  
     text-decoration: none;
     display: flex;
-    margin: 11px;
-    padding-right: 30%;
+    margin: 10px;
+    padding-right: 18%;
     font-family: "geostarfill";
     font-weight: bold;
     transition: 1s all;
     font-size: 20px;
   
+}
+
+.motero-img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 ul#list a:hover{
     background-color: red;
@@ -164,7 +170,7 @@ h1, h2, h3, .card-title {
    ▒▒ Se usa para agrupar contenido relacionado
    ▒▒ Ayuda a la estructura y accesibilidad del sitio
    ===================================================== */
-/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA la burbuja_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA la burbuja de bienvenida_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 /_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
 /_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
@@ -182,73 +188,53 @@ h1, h2, h3, .card-title {
     word-wrap: break-word;
 }
 
-.comic-bubble .comic-tail {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-width: 20px 20px 0;
-  border-style: solid;
-  border-color: #1e3a8a transparent transparent transparent;
-}
-.tamanioimg {
-    height: 430px;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
-}
- /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA las burbujas de bienvenida y pilotos_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+
+ /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*ESTILOS PARA las burbujas en el parrafo_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 /_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
 /_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*/
-.motero-img {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
+
 
 .bubble-thought {
-  position: absolute;
-  top: 5%;       
-  left: 5%;      
-  max-width: 30%;   /* siempre se ajusta al ancho de pantalla */
+  position: relative;
   background: #fff;
+  border: 3px solid #000;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.5;
   color: #111;
-  border-radius: 1.2rem;
-  padding: 1rem;
-  font-size: clamp(14px, 2vw, 18px); /* escala según pantalla */
-  line-height: 1.4;
-  font-family: Impact, Arial Black, sans-serif; /* estilo deportivo sin externos */
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
-  text-transform: uppercase;
-  z-index: 2;
+  text-align: left;
+  width: 40%;          /* solo ocupa la franja izquierda */
+  min-width: 250px;    /* asegura legibilidad en pantallas pequeñas */
+  box-shadow: 5px 5px 0 #000;
 }
 
-/* burbujas de pensamiento */
+/* Burbujas del lado derecho */
 .bubble-thought::after,
 .bubble-thought::before {
   content: "";
   position: absolute;
-  border-radius: 50%;
+  right: -28px;
   background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  border: 3px solid #000;
+  border-radius: 50%;
 }
 
 .bubble-thought::after {
   width: 20px;
   height: 20px;
-  top: 60%;
-  right: -30px;
+  bottom: 25px;
 }
 
 .bubble-thought::before {
   width: 12px;
   height: 12px;
-  top: 75%;
-  right: -50px;
+  bottom: 10px;
 }
+
 
 /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*cartas al darle click a los usuarios_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*

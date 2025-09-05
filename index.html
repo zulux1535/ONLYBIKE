@@ -55,8 +55,12 @@
                         <a class="btn btn-outline-primary nav-link" aria-current="page" href="#contacto">ESTAREMOS</a>
                         </li>
                         <li class="nav-item mx-8">
-                        <a class="btn btn-outline-primary nav-link" aria-current="page" href="#piloto">MOTEROS</a></li>
+                        <a class="btn btn-outline-primary nav-link" aria-current="page" href="#pt">MOTEROS</a></li>
                          <li class="nav-item mx-8">
+                          <li class="nav-item mx-8">
+                        <a class="btn btn-outline-primary nav-link" aria-current="page" href="#shorts">RUTAS</a></li>
+                        
+                        <li class="nav-item mx-8">
                     </ul>
                 </div>
           </div>
@@ -128,21 +132,28 @@
 <section id="somos" class="py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 position-relative text-center">
+      <div class="col-12 col-lg-10 position-relative">
+        
         <!-- Imagen -->
-        <img src="./img/anime motero.png" class="img-fluid motero-img" alt="Motero pensativo" width="100%" height="100%">
-        <!-- Burbuja -->
-        <div class="bubble-thought p-3">
-          <p class="mb-0">
+        <div class="text-center mb-4">
+          <img src="./img/anime motero.png" 
+               class="img-fluid motero-img" 
+               alt="Motero pensativo" 
+               width="100%" height="100%">
+        </div>
+        <div class="bubble-thought">
+          <p>
             Nuestro proyecto es un vlog grupal dedicado al mundo de las motos y la comunidad motera. 
             Queremos compartir nuestras rutas, experiencias y la pasión por la carretera. 
             No es solo sobre las motos, sino sobre la hermandad, la libertad y la aventura en cada kilómetro.
           </p>
         </div>
+
       </div>
     </div>
   </div>
 </section>
+
 
 <!--
 (¬‿¬) (¬‿¬) (¬‿¬)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  (¬‿¬) (¬‿¬) (¬‿¬)
@@ -152,7 +163,6 @@
 <section id="contacto" class="py-5">
   <div class="container">
     <div class="row">
-      <!-- Columna izquierda: Formulario -->
       <div class="col-md-6 mb-4 ">
         <h2 class="mb-3 text-white">SUSCRIBETE</h2>
         <form action="https://formspree.io/f/xzzajqzp" method="POST" class="mx-auto" style="max-width: 600px;">
@@ -191,7 +201,7 @@ _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*
 -->
 
-<div class="text-center my-5">
+<div id="pt" class="text-center my-5">
   <div class="comic-bubble p-4">
     PILOTOS
     <span class="comic-tail"></span>
@@ -204,100 +214,49 @@ _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*
 -->
 
-<section id="piloto" class=" py-4">
-  <!-- Tu imagen de fondo -->
-  <div class=" top-0 start-0 w-100 h-100">
-    <div class="container py-3">
-      <div class="row row-cols-1 row-cols-md-2 g-3">
-       
-        <!-- Piloto 1 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 1</h5></div>
+<section id="piloto" class="py-4">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 1</h5>
           </div>
         </div>
-        <!-- Piloto 2 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 2</h5></div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 2</h5>
           </div>
         </div>
-        <!-- Piloto 3 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 3</h5></div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 3</h5>
           </div>
         </div>
-        <!-- Piloto 4 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p4">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 4</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 5 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p5">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 5</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 6 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p6">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 6</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 7 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p7">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 7</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 8 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p8">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 8</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 9 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p9">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 9</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 10 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p10">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 10</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 11 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p11">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 11</h5></div>
-          </div>
-        </div>
-        <!-- Piloto 12 -->
-        <div class="col">
-          <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p12">
-            <div class="card-body"><h5 class="card-title mb-0">Piloto 12</h5></div>
-          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="p1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="./img/motero saludando.png" class="img-fluid" alt="Moto Piloto 1">
+        <div class="p-3">
+          <h5>Piloto 1</h5>
+          <p>julio con bicilindrica</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modales -->
-  <div class="modal fade" id="p1" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <img src="./img/moto1.jpg" class="img-fluid" alt="Moto Piloto 1">
-        <div class="p-3">
-          <h5>Piloto 1</h5>
-          <p>Descripción de la moto, especificaciones y detalles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="modal fade" id="p2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -309,117 +268,279 @@ _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p3" tabindex="-1">
+  <section id="piloto" class="py-4">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 1</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 2</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 3</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="p1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto3.jpg" class="img-fluid" alt="Moto Piloto 3">
+        <img src="./img/moto1.jpg" class="img-fluid" alt="Moto Piloto 1">
         <div class="p-3">
-          <h5>Piloto 3</h5>
+          <h5>Piloto 1</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p4" tabindex="-1">
+
+  <div class="modal fade" id="p2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto4.jpg" class="img-fluid" alt="Moto Piloto 4">
+        <img src="./img/moto2.jpg" class="img-fluid" alt="Moto Piloto 2">
         <div class="p-3">
-          <h5>Piloto 4</h5>
+          <h5>Piloto 2</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p5" tabindex="-1">
+  <section id="piloto" class="py-4">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 1</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 2</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 3</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="p1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto5.jpg" class="img-fluid" alt="Moto Piloto 5">
+        <img src="./img/moto1.jpg" class="img-fluid" alt="Moto Piloto 1">
         <div class="p-3">
-          <h5>Piloto 5</h5>
+          <h5>Piloto 1</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p6" tabindex="-1">
+
+  <div class="modal fade" id="p2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto6.jpg" class="img-fluid" alt="Moto Piloto 6">
+        <img src="./img/moto2.jpg" class="img-fluid" alt="Moto Piloto 2">
         <div class="p-3">
-          <h5>Piloto 6</h5>
+          <h5>Piloto 2</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p7" tabindex="-1">
+  <section id="piloto" class="py-4">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 1</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 2</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 3</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="p1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto7.jpg" class="img-fluid" alt="Moto Piloto 7">
+        <img src="./img/moto1.jpg" class="img-fluid" alt="Moto Piloto 1">
         <div class="p-3">
-          <h5>Piloto 7</h5>
+          <h5>Piloto 1</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p8" tabindex="-1">
+
+  <div class="modal fade" id="p2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto8.jpg" class="img-fluid" alt="Moto Piloto 8">
+        <img src="./img/moto2.jpg" class="img-fluid" alt="Moto Piloto 2">
         <div class="p-3">
-          <h5>Piloto 8</h5>
+          <h5>Piloto 2</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p9" tabindex="-1">
+  <section id="piloto" class="py-4">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 1</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 2</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card piloto-card" data-bs-toggle="modal" data-bs-target="#p3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Piloto 3</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="p1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto9.jpg" class="img-fluid" alt="Moto Piloto 9">
+        <img src="./img/moto1.jpg" class="img-fluid" alt="Moto Piloto 1">
         <div class="p-3">
-          <h5>Piloto 9</h5>
+          <h5>Piloto 1</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="p10" tabindex="-1">
+
+  <div class="modal fade" id="p2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <img src="./img/moto10.jpg" class="img-fluid" alt="Moto Piloto 10">
+        <img src="./img/moto2.jpg" class="img-fluid" alt="Moto Piloto 2">
         <div class="p-3">
-          <h5>Piloto 10</h5>
-          <p>Descripción de la moto, especificaciones y detalles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="p11" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <img src="./img/moto11.jpg" class="img-fluid" alt="Moto Piloto 11">
-        <div class="p-3">
-          <h5>Piloto 11</h5>
-          <p>Descripción de la moto, especificaciones y detalles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="p12" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <img src="./img/moto12.jpg" class="img-fluid" alt="Moto Piloto 12">
-        <div class="p-3">
-          <h5>Piloto 12</h5>
+          <h5>Piloto 2</h5>
           <p>Descripción de la moto, especificaciones y detalles.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+</section>
+</section>
+</section>
+</section>
+
+<!--
+_*_*_*_*_*_*_*_*_*_*_*_*_*_* carrusel de rutas_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*
+-->
+<section id="shorts" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Mira nuestras rutas y motos</h2>
+    
+    <div id="shortsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Short 1 -->
+        <div class="carousel-item active text-center">
+          <video class="d-block mx-auto" width="400" height="400" controls>
+            <source src="https://www.youtube.com/shorts/4sPAWQq5G6w" type="video/mp4">
+          </video>
+          <p class="mt-3">Short 1: adrenalina pura</p>
+        </div>
+
+        <!-- Short 2 -->
+        <div class="carousel-item text-center">
+          <video class="d-block mx-auto" width="400" height="400" controls>
+            <source src="./video/short2.mp4" type="video/mp4">
+          </video>
+          <p class="mt-3">Short 2: rugido de motores</p>
+        </div>
+
+        <!-- Short 3 -->
+        <div class="carousel-item text-center">
+          <video class="d-block mx-auto" width="400" height="400" controls>
+            <source src="./video/short3.mp4" type="video/mp4">
+          </video>
+          <p class="mt-3">Short 3: velocidad extrema</p>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#shortsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#shortsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 <!--
 _*_*_*_*_*_*_*_*_*_*_*_*_*_* pie de la pagina _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
@@ -429,10 +550,17 @@ _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 
 <footer class="gp-footer">
   <div class="gp-footer-content">
-    <!-- Enlace TikTok con logo o imagen -->
+    
+    <!-- Enlace TikTok -->
     <a class="gp-cta" href="https://www.tiktok.com/@2zulux?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
       <img src="./img/undefined_dame_una_tiktok_img_.png" alt="TikTok" class="gp-img">
       <span class="gp-text">Síguenos en TikTok</span>
+    </a>
+
+    <!-- Enlace YouTube -->
+    <a class="gp-cta" href="https://www.youtube.com/@zulux5744" target="_blank" rel="noopener noreferrer">
+      <img src="./img/moto-youtube.png" alt="YouTube" class="gp-img">
+      <span class="gp-text">Síguenos en YouTube</span>
     </a>
 
     <!-- Derechos de autor -->
@@ -450,15 +578,14 @@ _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 <!-- JS Leaflet -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-  // Inicializar el mapa
+
   var map = L.map('map').setView([43.46897003756652, -3.812315001180558], 15); 
 
-  // Cargar mapa base (OpenStreetMap)
+ 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
   }).addTo(map);
 
-  // Marcador
   L.marker([43.46897003756652, -3.812315001180558]).addTo(map)
     .bindPopup('Aquí estamos 👋')
     .openPopup();
